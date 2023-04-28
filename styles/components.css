@@ -1,0 +1,110 @@
+.colores {
+  height: 15px;
+  width: 100%;
+  background: var(--color-medium);
+  background: linear-gradient(
+    90deg,
+    var(--color-light) 33%,
+    var(--color-medium) 33%,
+    var(--color-medium) 66%,
+    var(--color-dark) 66%
+  );
+}
+
+.button {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-dark);
+  box-shadow: var(--shadow);
+}
+
+.icon {
+  height: 1.5em;
+  width: auto;
+}
+
+.quote p {
+  font-size: clamp(2rem, 2rem + 4vw, 5rem);
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+.quote img {
+  width: clamp(5rem, 6vw, 7.5rem);
+}
+
+.card {
+  background-color: var(--color-gray);
+  border-radius: 16px;
+  padding: clamp(1rem, 5%, 3rem);
+  box-shadow: var(--shadow);
+}
+
+.presidente__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.presidente {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.presidente img {
+  width: 12.5rem;
+  height: auto;
+  margin: auto;
+}
+
+.candidato {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 4rem;
+}
+
+.candidato__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.candidato__texto {
+  align-self: center;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.candidato__texto p {
+  margin: 0;
+}
+
+.candidato__boletas {
+  text-align: center;
+}
+
+:is(.presidente, .candidato) img {
+  border-radius: 999px;
+  border: 10px solid var(--color-dark);
+  box-shadow: var(--shadow);
+}
+
+@media screen and (min-width: 700px) {
+  .candidato {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: center;
+  }
+
+  .candidato__texto {
+    text-align: start;
+  }
+}
