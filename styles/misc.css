@@ -2,7 +2,9 @@ img {
   width: 100%;
 }
 
-a {
+a,
+strong,
+b {
   color: var(--color-dark);
   font-weight: bold;
 }
