@@ -3,9 +3,19 @@
   --color-medium: #ffd94d;
   --color-dark: #ffca1a;
   --color-gray: #f0f0f0;
+  --color-background: #ffffff;
+  --color-text: #000000;
 
   --font-body: "Montserrat", sans-serif;
   --font-heading: "Bebas Neue", sans-serif;
 
   --shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray: #27272a;
+    --color-background: #18181b;
+    --color-text: #e4e4e7;
+  }
 }

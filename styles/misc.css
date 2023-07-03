@@ -1,3 +1,9 @@
+html {
+  color-scheme: light dark;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
 img {
   width: 100%;
 }
@@ -7,4 +13,10 @@ strong,
 b {
   color: var(--color-dark);
   font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cdn {
+    filter: invert();
+  }
 }
